@@ -1,0 +1,53 @@
+/* medium device */
+@media screen and (max-width: 992px){
+  .header-top{
+    display: none;
+  }
+  .header-mid{
+    display: none;
+  }
+  .header-bottom{
+    height: 140px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .header-bottom .logo-scroll-first,
+  .header-bottom .logo-scroll-second{
+    display: none;
+  }
+  .header-bottom .logo-scroll-third{
+    display: flex ;
+    padding: 0 ;
+  }
+  .content-chagas-disease{
+    height: max-content;
+  }
+  .description-chagas-disease h2{
+    font-size: 35px;
+  }
+  .footer-icons{
+    display: none;
+  }
+}
+
+/* small device */
+@media screen and (max-width: 768px){
+  .contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description-chagas-disease h2{
+    font-size: 30px;
+  }
+}
+
+/* Extra small device */
+@media screen and (max-width: 576px){
+  .description-chagas-disease h2{
+    font-size: 25px;
+  }
+}
+

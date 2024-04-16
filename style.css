@@ -1,0 +1,413 @@
+/*Universal selector*/
+*{
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+/* Header Starts */
+/* Common styles in Header*/
+.header-left .bi-chevron-down,
+.header-bottom .bi-chevron-down{
+  margin: -3px 0px 0 10px;
+}
+.bi-chevron-down{
+  font-size: 12px;
+}
+.bi-chevron-down::before,
+.bi-search::before{
+  font-weight: 1000 !important;
+}
+.header-top a,
+.header-bottom .nav-item-link{
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+/* 1. Header Top */
+.header-top{
+  background-color: #274375;
+  font-size: 15px;
+  font-weight: bold;
+  li{
+    padding: 0 20px;
+  }
+}
+.header-top a{
+  min-height: 3rem;
+}
+.bi-search{
+ padding: 0 16px;
+}
+.bi-search,
+.bi-translate{
+  font-size: 23px;
+}
+.search-bar{
+  width: 55px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  margin: 0 10px;
+}
+/* Search bar Expand on JS trigger */
+.search-bar-expand{
+  width: 324px;
+  padding: 0 16px;
+  background-color: #0078d4;
+}
+.search-bar input{
+  height: 100%;
+  border: none;
+  background-color: #0078d4;
+  color: #fff;
+}
+.search-bar input:focus{
+  outline: none;
+}
+.search-bar input::placeholder{
+  color: #fff;
+}
+
+.header-right .bi-chevron-down,
+.header-right .bi-translate{
+  padding: 0 20px;
+}
+
+/* 2. Header Mid */
+.header-mid a{
+  margin: 40px 30px;
+  display: inline-block;
+}
+
+/* 3. Header Bottom */
+.header-bottom{
+  background-color: #0c2b64;
+  font-size: 1.125rem;
+  font-weight: bold;
+  z-index: 100;
+  width: 100%;
+}
+.header-bottom .nav-item-link{
+  padding: 0px 20px;
+  min-height: 3.5rem;
+  cursor: pointer;
+}
+.bi-house-fill{
+  font-size: 37px;
+}
+.nav-logo-scroll{
+  margin: 0 20px;
+}
+.header-bottom .logo-scroll-first{
+  padding: 0 10px;
+}
+.header-bottom .logo-scroll-second{
+  display: none;
+}
+.header-bottom .logo-scroll-third{
+  display: none;
+}
+.navbar{
+  padding: 0;
+}
+.navbar-nav{
+  width: 100%;
+  max-width: 1100px;
+  justify-content: space-between;
+}
+
+/* Javascript trigger when scroll */
+.js-fix-header{
+  position: fixed;
+  top: 0;
+  .logo-scroll-first{
+    display: none;
+  }
+  .logo-scroll-second{
+    display: flex;
+  }
+}
+
+/* Mega Drop down menu */
+.drop-down-mega{
+  display: none;
+  position: absolute;
+  background-color: #274375;
+  margin-top: -5px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  color: #fff;
+}
+.table-mega{
+  display: table;
+  table-layout: fixed;
+  padding: 0 30px;
+}
+.t-cell{
+  display: table-cell;
+  vertical-align: top;
+  float: none;
+  padding: 30px 15px;
+  border: .8px solid rgb(55, 80, 127);
+}
+.drop-down-heading button{
+  background-color: inherit;
+  border: 0;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 6px;
+  margin-bottom: 15px;
+  color: inherit;
+  display: block;
+}
+.drop-down-mega a{
+  color: inherit;
+}
+.drop-down-mega .normal-list li{
+  padding: 6px 10px;
+  font-weight: normal;
+}
+.drop-down-mega .alphabet li{
+  padding: 9px;
+  display: inline-block;
+}
+.js-dropdown-menu{
+  display: unset !important;
+}
+.js-icon-up{
+  rotate: 180deg !important; 
+}
+/* Header Ends*/
+
+/* Main Starts */
+/* common styles in Main */
+.heading{
+  margin: 30px 0px 20px ;
+  padding-bottom: 10px;
+  border-bottom: #b3bdce solid 1px;
+  display: flex;
+  justify-content: space-between;
+}
+.heading h2,
+.heading a{
+  font-size: 1.625rem;
+  line-height: 2;
+  font-weight: 700;
+  color: rgb(9, 40, 98);
+}
+.content{
+  margin: 30px 0px 20px;
+}
+.card,
+.events-card{
+  width: 100%;
+  transition: .3s;
+  background-color: #f6f7f9;
+  border-radius: 0;
+  border: 1.6px solid transparent;
+}
+.emergencies .card-img-top,
+.main-disease .card-img-top,
+.campaigns-section .card-img-top{
+  aspect-ratio: 16 / 9;
+}
+.card-body,
+.events-card-body{
+  padding: 24px;
+  font-size: 14px;
+  color: rgb(0, 32, 92);
+  width: 100%;
+  p{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+.card:hover,
+.events-card:hover{
+  background-color: #e7eaef;
+}
+.card-img-top,
+.events-card img{
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* section 1: chagas-disease */
+.content-chagas-disease{
+  height: 650px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 60px;
+  color: #fff;
+}
+.content-chagas-disease img{
+  width: 100%;
+}
+.description-chagas-disease{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 10%;
+}
+.description-chagas-disease h2{
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 5rem;
+  margin: 0;
+  padding:0 20px;
+  background-color: rgba(12, 43, 100, .9);
+}
+.description-chagas-disease .btn{
+  background-color: #0c2b64;
+  font-weight: 700;
+  font-size: 22px;
+  border-radius: 2px;
+  padding: 5px 30px;
+  color: #fff;
+}
+
+/* section2: latest-content */
+.latest-content .content{
+  margin: 30px 15px 20px;
+}
+.latest-content .card-img-top{height: 272px;}
+.latest-content .card{
+  margin-bottom: 24px;
+}
+
+/* Common: section 2 & section 3 */
+.latest-content .heading,
+.emergencies .heading{
+  margin: 30px 15px 20px ;
+}
+/* Common: section 2 & section 5 */
+.latest-content .card:hover,
+.events-card:hover{
+  border: 1.6px solid black;
+}
+
+/* section 3: emergencies */
+.emergencies h3{
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(60, 66, 69);
+}
+.emergencies .card:hover{
+  border: 1.6px solid #7082a4;
+  a{
+    border: 1.6px solid rgba(100, 120, 156, .6);
+  }
+}
+
+/* Common: section 3 & section 4 */
+.emergencies a,
+.main-disease a{
+  color: rgb(0, 32, 92);
+  display: inline-block;
+  padding: 3px;
+  border: 1.6px solid transparent;
+}
+
+/* section 4 */
+.main-disease .card:hover .card-img-top{
+  opacity: .9;
+}
+.main-disease .card-img-top{
+  border-bottom: 3px solid #009ade;
+  transition: .3s;
+}
+
+
+/*section 5*/
+.events-card{
+  display: flex;
+  margin-bottom: 13px;
+  img{
+    height: 131px;
+    width: 131px;
+  }
+}
+/* Main Ends */
+
+/* footer starts */
+footer a{
+  color: #fff;
+  border: 2px solid transparent;
+  display: inline-block;
+  padding: 4px;
+  transition: .5s;
+}
+/* 1. Main Footer */
+.main-footer{
+  margin-top: 32px;
+  padding: 40px 0;
+  background-color: #0c2b64;
+  color: white;
+}
+.main-footer h2{
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+.main-footer .row{
+  margin: 0;
+}
+.main-footer button{
+  margin: 22px 0;
+  padding: 10px 30px;
+  border: 1.6px solid #00205c;
+  background-color: #2a4577;
+  color: #fff;
+  border-radius: 4px;
+}
+.main-footer button:hover{
+  border: 1.6px solid #006cbe;
+}
+.main-footer img{
+  height: 100px;
+}
+
+/* 2. Bottom-footer */
+.bottom-footer{
+  padding: 30px 30px 20px;
+  background-color: #274375;
+  color: #fff;
+  font-weight: bold;
+}
+.bottom-footer i{
+  font-size: 24px;
+  padding: 0 17px;
+}
+.bottom-footer h5{
+  font-size: 16px;
+  font-weight: bold;
+}
+/* footer ends */
+
+/* Common style for body */
+.header-top li:hover,
+.header-bottom .nav-logo-scroll:hover,
+.header-bottom li:hover,
+.description-chagas-disease .btn:hover,
+footer a:hover{
+  background-color: #0078d4;
+}
