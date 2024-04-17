@@ -42,6 +42,9 @@
   .description-chagas-disease h2{
     font-size: 30px;
   }
+  .main-footer img{
+    height: 90px;
+  }
 }
 
 /* Extra small device */
@@ -49,5 +52,37 @@
   .description-chagas-disease h2{
     font-size: 25px;
   }
+  .description-chagas-disease .btn {
+    font-size: 20px;
+  }
+  .heading h2,
+  .heading a {
+    font-size: 1.5rem;
+  }
+  .events-card-body p {
+    font-size: 16px;
+  }
+  .main-footer img{
+    height: 80px;
+  }
 }
 
+/* mobile phones */
+@media screen and (max-width: 450px){
+  .description-chagas-disease h2{
+    font-size: 17px;
+  }
+  .description-chagas-disease .btn {
+    font-size: 15px;
+  }
+  .heading h2,
+  .heading a {
+    font-size: 1.2rem;
+  }
+  .events-card-body p {
+    font-size: 14px;
+  }
+  .main-footer img{
+    height: 70px;
+  }
+}
