@@ -1,17 +1,14 @@
-// Header fix while scroll
-//let mainElem = document.querySelector('main');
-document.addEventListener('scroll', function changecss(){
+// Header fix  onScroll
+document.addEventListener('scroll', function(){
   const navElem = document.querySelector('.header-bottom');
   if(scrollY>=180){
     navElem.classList.add('js-fix-header')
-    //mainElem.style.marginTop = '72px'
   }else{
     navElem.classList.remove('js-fix-header')
-    //mainElem.style.marginTop = '0'
   }
 })
 
-// Search Bar expand
+// Search Bar expand on Click
 const searchIconElem = document.querySelector('.search-icon')
 const searchElem = document.querySelector('.search-bar')
 searchIconElem.addEventListener('click',()=>{
@@ -25,14 +22,29 @@ searchIconElem.addEventListener('click',()=>{
   })
 })
 
-/* Drop Down menu active and collapse */
+/* Drop Down menu active and collapse onClick */
 dropDownParentElem = document.getElementById('health_topics_link')
 dropDownParentElem.addEventListener('click', function(){
   document.querySelector('.drop-down-mega').classList.toggle('js-dropdown-menu')
   document.querySelector('#icon_down').classList.toggle('js-icon-up')
 })
 
-/*
+/* Background color change collapsive button onClick */
+console.log()
+document.getElementById('collapsiveNavbottun').addEventListener('click',()=>{
+  document.querySelector('.navbar').classList.toggle('js-fix-collapsiveButton')
+  document.querySelector('.header-bottom').classList.toggle('js-fix-collapsiveButton')
+})
+
+
+// Test Purpose
+/* 
+let mainElem = document.querySelector('main');
+if(scrollY>=180)
+  mainElem.style.marginTop = '72px'
+else
+  mainElem.style.marginTop = '0'
+
 window.addEventListener('resize',()=>{
   let ww=window.innerWidth
   let headerBottomElem=document.querySelector('#header_bottom')

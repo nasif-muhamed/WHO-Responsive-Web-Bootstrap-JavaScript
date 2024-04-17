@@ -11,6 +11,8 @@
   }
 }
 
+/*sus*/ body{}
+
 /* Header Starts */
 /* Common styles in Header*/
 .header-left .bi-chevron-down,
@@ -139,6 +141,10 @@
   }
 }
 
+.js-fix-collapsiveButton{
+  background-color: #20313b !important;
+  position:fixed !important;
+}
 /* Mega Drop down menu */
 .drop-down-mega{
   display: none;
